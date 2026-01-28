@@ -20,5 +20,14 @@
   <footer>
     <small>Your night your pace.</small>
   </footer>
+
+  <script>
+  const reflectionDone = localStorage.getItem("reflectionDone");
+  const routineDone = localStorage.getItem("routineDone");
+
+  if (reflectionDone && routineDone) {
+    window.location.href = "sleep.html";
+  }
+</script>
 </body>
 </html>
