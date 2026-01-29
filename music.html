@@ -4,16 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Music Page</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>Choose your relaxing music</h1>
   </header>
   <main>
-
+    <p>Select music and relax for a moment.</p>
+    <button onclick="goNext()">Continue</button>
   </main>
+
   <footer>
     <small>Enjoy your calm moments.</small>
   </footer>
+  
+  <script>
+    function goNext() {
+      window.location.href = "home.html";
+    }
+  </script>
 </body>
 </html>
