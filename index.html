@@ -26,7 +26,10 @@
       // after 4 seconds, go to music page
       setTimeout(function () {
         window.location.href = "music.html";
-      }, 8000);
+      }, 4000);
+      
+      localStorage.removeItem("reflectionDone");
+      localStorage.removeItem("routineDone");
     </script>
     
   </body>
