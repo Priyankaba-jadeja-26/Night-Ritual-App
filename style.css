@@ -4,6 +4,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+h1 {
+  animation: fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
 /* Body */
 body {
@@ -15,6 +23,7 @@ body {
   flex-direction: column;
   position: relative;
   overflow: hidden;
+  transition: all 0.3s ease;
 }
 
 /* Header */
@@ -131,7 +140,6 @@ body::after {
   z-index: -1;
 }
 
-
 /* Blob morphing animation */
 @keyframes blobMove {
   0% {
@@ -154,4 +162,21 @@ body::after {
     border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%;
     transform: translate(0, 0) scale(1);
   }
+}
+
+button{
+  background: linear-gradient(135deg, #4a7cff, #6ea8ff);
+  border: none;
+  color: white;
+  padding: 12px 28px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
